@@ -38,7 +38,9 @@ const People = connectToDB.define("people",{
 })
 
 People.belongsTo(Pet, {
-    foreignKey:"pet_id"
+    foreignKey:"pet_id",
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE"
 })
 
 

@@ -7,6 +7,8 @@ async function initializeDB(){
 
     try{
 
+        await People.drop()
+        await Pet.drop()
         await Pet.sync()
         await People.sync()
 
