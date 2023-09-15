@@ -100,11 +100,11 @@ function editPerson(req, res){
                 res.status(404).json({message:"The id you have inputted is not in the database"})
 
             } else{
-                console.log(response)
+                // console.log(response)
 
                 // res.status(200).json({message:"The edit worked"})
 
-                res.status(200).redirect('/people')
+                res.status(200).json({message:"The data was fixed"})
 
             }
 
