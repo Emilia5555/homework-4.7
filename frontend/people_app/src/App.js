@@ -92,7 +92,6 @@ const App = () => {
 
   function editPeople(id, info){
 
-    console.log(`The id is ${id}`)
 
     apiConn.put(`/people/${id}`, info)
     .then(response =>{
