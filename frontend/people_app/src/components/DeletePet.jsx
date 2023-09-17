@@ -1,12 +1,12 @@
 import React from 'react'
 
-const DeleteButton = ({id, deletePeople}) => {
+const DeletePet = ({id, deletePet}) => {
     
+
     function handleDelete(e){
         
-        deletePeople(id)
+        deletePet(id)
     }
-
 
     return (
     <>
@@ -15,4 +15,4 @@ const DeleteButton = ({id, deletePeople}) => {
   )
 }
 
-export default DeleteButton
+export default DeletePet
